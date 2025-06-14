@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <div id="main">
+            <div id="registration">
+                <div>Registration</div><br>
+                <form action="" id="registrationForm">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" maxlength="50" required style="font-size: 2vh; width: 60%;"><br>
+                    <span id="nameError" style="color: red;"></span><br>
+
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" id="male" value="male" required onclick="mySelect()" >
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">female</label><br><br>
+
+                    <label for="phone">Phone no.:</label>
+                    <input type="text" id="phone" style="font-size: 2vh; width: 40%;" name="phone" maxlength="10"
+                        required ><br><span id="phoneError" style="color: red;"></span><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" style="font-size: 2vh;" id="age" name="age" min="18" max="99">
+                    <span id="ageError" style="color: red;"></span>
+                    <br><br>
+
+                    
+                        <label>Marital Status:  </label>
+                        <select id="marital" name="marital" style="font-size: 5vh; width: 30%;">
+                            <option value="">Select status</option>
+                            <option value="unmarried">Unmarried</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                            <option value="widow" id="widow">Widow</option>
+                        </select>
+                    
+                    <br><br><br><br>
+                    <div id="form-btn">
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
